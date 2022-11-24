@@ -26,4 +26,11 @@ echo "a+b*c = " ${compute[compute1]}
 echo "a*b+c = " ${compute[compute2]}
 echo "c+a/b = " ${compute[compute3]}
 echo "a%b+c = " ${compute[compute4]}
-echo "All values in Dictionary [ ${compute[@]} ]"
+echo "All values in Dictionary "${compute[@]}
+
+array[compute++]=${compute[compute1]}
+array[compute++]=${compute[compute2]}
+array[compute++]=${compute[compute3]}
+array[compute++]=${compute[compute4]}
+
+echo "All values in array: "${array[@]}
