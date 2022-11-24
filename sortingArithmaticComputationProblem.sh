@@ -37,3 +37,6 @@ echo "All values in array: "${array[@]}
 
 echo "Sorting in Descending Order"
 for i in ${array[@]}; do echo $i; done | sort -nr
+
+echo "Sorting in Ascending Order"
+for i in ${array[@]}; do echo $i; done | sort -n
