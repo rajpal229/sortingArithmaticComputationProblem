@@ -6,5 +6,6 @@ read -p "Enter third value 'c' : " c;
 
 Echo "values are $a $b $c"
 
-compute2=$(($a*$b+$c))
-echo "a*b+c = "$compute2
+compute3=`awk 'BEGIN{printf("%0.2f", '$c'+'$a'/'$b')}'`
+echo "c+a/b = "$compute3
+
